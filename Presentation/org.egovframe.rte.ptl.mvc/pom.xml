@@ -17,13 +17,8 @@
 
 	<repositories>
 		<repository>
-	    	<id>mavenRepo</id>
-	        <name>mavenRepo</name>
-            <url>https://repo1.maven.org/maven2/</url>
-	    </repository>
-		<repository>
 			<id>egovframe</id>
-			<url>http://maven.egovframe.go.kr/maven/</url>
+			<url>https://maven.egovframe.go.kr/maven/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
