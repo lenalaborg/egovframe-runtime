@@ -10,30 +10,7 @@
     <description>The eGovernment Standard Framework</description>
     <url>http://www.egovframe.go.kr</url>
     
-    <licenses>
-        <license>
-            <name>The Apache Software License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-        </license>
-    </licenses>
-
-    <properties>
-        <spring.maven.artifact.version>5.2.5.RELEASE</spring.maven.artifact.version>
-        <batch.maven.artifact.version>4.2.2.RELEASE</batch.maven.artifact.version>
-        <org.egovframe.rte.version>4.0.0</org.egovframe.rte.version>
-    </properties>
-
-	<repositories>
-		<repository>
-			<id>egovframe</id>
-			<url>http://maven.egovframe.go.kr/maven/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
+    <repositories>
 		<repository>
 			<id>egovframe</id>
 			<url>https://maven2.pavlab.msl.ubc.ca</url>
@@ -45,7 +22,18 @@
 			</snapshots>
 		</repository>
 	</repositories>
-
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <properties>
+        <spring.maven.artifact.version>5.2.5.RELEASE</spring.maven.artifact.version>
+        <batch.maven.artifact.version>4.2.2.RELEASE</batch.maven.artifact.version>
+        <org.egovframe.rte.version>4.0.0</org.egovframe.rte.version>
+        <skipTests>true</skipTests>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.egovframe.rte</groupId>
@@ -231,7 +219,6 @@
             <artifactId>javax.annotation-api</artifactId>
             <version>1.3.2</version>
         </dependency>
-
         <!-- for testing -->
         <dependency>
             <groupId>junit</groupId>
@@ -284,7 +271,7 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.egovframe.rte</groupId>
+            <groupId>org.springmodules</groupId>
             <artifactId>spring-modules-validation</artifactId>
             <version>0.9</version>
             <scope>test</scope>
@@ -344,7 +331,6 @@
             <version>2.6</version>
         </dependency>
     </dependencies>
-
     <build>
         <defaultGoal>install</defaultGoal>
         <directory>${basedir}/target</directory>
@@ -359,6 +345,7 @@
                         <source>1.7</source>
                         <target>1.7</target>
                         <encoding>UTF-8</encoding>
+                        <skipTests>true</skipTests>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -414,7 +401,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
                 <configuration>
-                    <skipTests>false</skipTests>
+                    <skipTests>true</skipTests>
                     <forkMode>once</forkMode>
                     <reportFormat>xml</reportFormat>
                     <excludes>
@@ -443,7 +430,6 @@
             </plugin>
         </plugins>
     </build>
-
     <reporting>
         <outputDirectory>${basedir}/target/site</outputDirectory>
         <plugins>
