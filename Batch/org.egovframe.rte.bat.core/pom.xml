@@ -9,7 +9,7 @@
     <name>org.egovframe.rte.bat.core</name>
     <description>The eGovernment Standard Framework</description>
     <url>http://www.egovframe.go.kr</url>
-
+    
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -27,6 +27,16 @@
 		<repository>
 			<id>egovframe</id>
 			<url>http://maven.egovframe.go.kr/maven/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>egovframe</id>
+			<url>https://maven2.pavlab.msl.ubc.ca</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
