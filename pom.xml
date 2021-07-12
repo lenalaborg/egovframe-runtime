@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.egovframe.rte</groupId>
@@ -39,9 +40,21 @@
 		<module>Batch/org.egovframe.rte.bat.core</module>
 
 	</modules>
-<properties>
-  <sonar.projectKey>lenalaborg_egovframe-runtime</sonar.projectKey>
-  <sonar.organization>lenalaborg</sonar.organization>
-  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-</properties>
+	<repositories>
+		<repository>
+			<id>terracotta</id>
+			<name>Terracotta Repo</name>
+			<url>https://repo.terracotta.org/maven2/</url>
+		</repository>
+		<repository>
+			<id>mavenRepo</id>
+			<name>mavenRepo</name>
+			<url>https://repo1.maven.org/maven2/</url>
+		</repository>
+	</repositories>
+	<properties>
+		<sonar.projectKey>lenalaborg_egovframe-runtime</sonar.projectKey>
+		<sonar.organization>lenalaborg</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	</properties>
 </project>

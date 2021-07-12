@@ -1,6 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         
+    <parent>
+    	<groupId>org.egovframe.rte</groupId>
+		<artifactId>org.egovframe.rte.root</artifactId>
+		<version>4.0.0</version>
+    </parent>
+    
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.egovframe.rte</groupId>
     <artifactId>org.egovframe.rte.fdl.access</artifactId>
@@ -266,17 +273,5 @@
                 </configuration>
             </plugin>
         </plugins>
-    </reporting>
-    <repositories>
-         <repository>
-               <id>terracotta</id>
-               <name>Terracotta Repo</name>
-               <url>https://repo.terracotta.org/maven2/</url>
-         </repository>
-         <repository>
-                  <id>mavenRepo</id>
-                  <name>mavenRepo</name>
-                  <url>https://repo1.maven.org/maven2/</url>
-         </repository>
-    </repositories>         
+    </reporting>    
 </project>
