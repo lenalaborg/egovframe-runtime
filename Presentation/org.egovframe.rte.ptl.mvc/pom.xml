@@ -26,11 +26,6 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
-		<repository>
-                  <id>mavenRepo</id>
-                  <name>mavenRepo</name>
-                  <url>https://repo1.maven.org/maven2/</url>
-         </repository>
 	</repositories>
 
     <dependencies>
