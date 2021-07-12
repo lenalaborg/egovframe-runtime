@@ -10,6 +10,19 @@
     <description>The eGovernment Standard Framework</description>
     <url>http://www.egovframe.go.kr</url>
     
+    <repositories>
+        <repository>
+	        <id>egovframe</id>
+	        <url>https://repo.spring.io/plugins-release</url>
+	         <releases>
+	             <enabled>true</enabled>
+	         </releases>
+    	         <snapshots>
+	             <enabled>false</enabled>
+	         </snapshots>
+	    </repository>
+    </repositories>
+    
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -99,11 +112,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <dependency>
-		    <groupId>org.terracotta.internal</groupId>
-		    <artifactId>statistics</artifactId>
-		    <version>1.0.2</version>
-		</dependency>
         <dependency>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
