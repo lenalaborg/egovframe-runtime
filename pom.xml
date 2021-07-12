@@ -39,9 +39,9 @@
 		<module>Batch/org.egovframe.rte.bat.core</module>
 
 	</modules>
-	<properties>
-           <sonar.projectKey>lenalaborg_egovframe-runtime</sonar.projectKey>
-           <sonar.organization>lenalaborg</sonar.organization>
-           <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        </properties>
+<properties>
+  <sonar.projectKey>lenalaborg_egovframe-runtime</sonar.projectKey>
+  <sonar.organization>lenalaborg</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
 </project>
