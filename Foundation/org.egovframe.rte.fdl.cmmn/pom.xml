@@ -10,14 +10,6 @@
     <description>The eGovernment Standard Framework</description>
     <url>http://www.egovframe.go.kr</url>
     
-    <repositories>
-    	<repository>
-    		<id>terracotta</id>
-    		<name>spring-plugins</name>
-    		<url>https://repo.spring.io/plugins-release</url>
-    	</repository>
-    </repositories>
-    
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
