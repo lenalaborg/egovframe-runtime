@@ -10,18 +10,29 @@
 	<description>The eGovernment Standard Framework</description>
 	<url>http://www.egovframe.go.kr</url>
 
+	<repositories>
+		<repository>
+			<id>egovframe</id>
+			<!-- url>http://maven.egovframe.kr/maven/</url -->
+			<url>https://maven2.pavlab.msl.ubc.ca</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
 			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
 		</license>
 	</licenses>
-
 	<properties>
 		<spring.maven.artifact.version>5.2.5.RELEASE</spring.maven.artifact.version>
 		<org.egovframe.rte.version>4.0.0</org.egovframe.rte.version>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.egovframe.rte</groupId>
@@ -47,7 +58,7 @@
 			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.egovframe.rte</groupId>
+			<groupId>org.springmodules</groupId>
 			<artifactId>spring-modules-validation</artifactId>
 			<version>0.9</version>
 		</dependency>
@@ -80,7 +91,6 @@
 			<artifactId>javax.annotation-api</artifactId>
 			<version>1.3.2</version>
 		</dependency>
-
 		<!-- For Testing -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -107,7 +117,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<defaultGoal>install</defaultGoal>
 		<directory>${basedir}/target</directory>
@@ -270,27 +279,4 @@
 			</plugin>
 		</plugins>
 	</reporting>
-
-	<repositories>
-<!-- 		<repository> -->
-<!-- 			<id>egovframe</id> -->
-<!-- 			<url>http://maven.egovframe.kr:8080/maven/</url> -->
-<!-- 			<releases> -->
-<!-- 				<enabled>true</enabled> -->
-<!-- 			</releases> -->
-<!-- 			<snapshots> -->
-<!-- 				<enabled>false</enabled> -->
-<!-- 			</snapshots> -->
-<!-- 		</repository> -->
-		<repository>
-			<id>PavLab</id>
-			<url>https://maven2.pavlab.msl.ubc.ca</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
 </project>
