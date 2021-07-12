@@ -11,16 +11,16 @@
     <url>http://www.egovframe.go.kr</url>
     
     <repositories>
-        <repository>
-	        <id>egovframe</id>
-	        <url>https://repo.spring.io/plugins-release</url>
-	         <releases>
-	             <enabled>true</enabled>
-	         </releases>
-    	         <snapshots>
-	             <enabled>false</enabled>
-	         </snapshots>
-	    </repository>
+         <repository>
+               <id>terracotta</id>
+               <name>Terracotta Repo</name>
+               <url>https://repo.terracotta.org/maven2/</url>
+         </repository>
+         <repository>
+                  <id>mavenRepo</id>
+                  <name>mavenRepo</name>
+                  <url>https://repo1.maven.org/maven2/</url>
+         </repository>
     </repositories>
     
     <licenses>
