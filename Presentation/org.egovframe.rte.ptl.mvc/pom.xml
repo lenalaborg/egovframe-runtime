@@ -15,6 +15,19 @@
         <org.egovframe.rte.version>4.0.0</org.egovframe.rte.version>
     </properties>
 
+	<repositories>
+		<repository>
+			<id>egovframe</id>
+			<url>https://maven2.pavlab.msl.ubc.ca</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.egovframe.rte</groupId>
@@ -44,13 +57,6 @@
             <artifactId>spring-modules-validation</artifactId>
             <version>0.9</version>
         </dependency>
-		        <!-- https://mvnrepository.com/artifact/org.springmodules/spring-modules-validation -->
-		<dependency>
-		    <groupId>org.springmodules</groupId>
-		    <artifactId>spring-modules-validation</artifactId>
-		    <version>0.9</version>
-		</dependency>
-		        
         <dependency>
             <groupId>commons-validator</groupId>
             <artifactId>commons-validator</artifactId>
