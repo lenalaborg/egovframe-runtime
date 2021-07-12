@@ -9,7 +9,7 @@
     <name>org.egovframe.rte.fdl.cmmn</name>
     <description>The eGovernment Standard Framework</description>
     <url>http://www.egovframe.go.kr</url>
-
+    
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -136,6 +136,12 @@
             <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.terracotta.internal/statistics -->
+		<dependency>
+		    <groupId>org.terracotta.internal</groupId>
+		    <artifactId>statistics</artifactId>
+		    <version>1.0.2</version>
+		</dependency>
     </dependencies>
 
     <build>
