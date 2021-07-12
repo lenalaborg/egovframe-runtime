@@ -327,4 +327,11 @@
             </plugin>
         </plugins>
     </reporting>
+    <repositories>
+         <repository>
+               <id>terracotta</id>
+               <name>Terracotta Repo</name>
+               <url>https://repo.terracotta.org/maven2/</url>
+         </repository>
+    </repositories>
 </project>
