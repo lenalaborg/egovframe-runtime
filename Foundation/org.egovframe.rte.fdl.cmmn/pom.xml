@@ -14,7 +14,7 @@
     	<repository>
     		<id>terracotta</id>
     		<name>spring-plugins</name>
-    		<rul>https://repo.spring.io/plugins-release</rul>
+    		<url>https://repo.spring.io/plugins-release</url>
     	</repository>
     </repositories>
     
