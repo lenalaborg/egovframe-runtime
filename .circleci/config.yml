@@ -31,7 +31,10 @@ jobs:
       - attach_workspace:
           at: .
       - run:
-          name: Analyze on SonarCloud
+          name: move to eGovFrame Batch
+          command: cd ./Batch
+      - run:
+          name: Analysis Sonar eGovFrame Batch
           command: mvn sonar:sonar
 
 workflows:
