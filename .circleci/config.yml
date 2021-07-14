@@ -17,7 +17,7 @@ jobs:
       # Use mvn clean and package as the standard maven build phase
       - run:
           name: Build and Test
-          command: mvn verify
+          command: mvn package
       - persist_to_workspace:
           root: .
           paths: 
